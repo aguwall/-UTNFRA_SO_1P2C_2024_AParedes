@@ -1,1 +1,1 @@
-# -UTNFRA_SO_1P2C_2024_AParedes
+# UTNFRA_SO_1P2C_2024_AParedes
