@@ -2,6 +2,10 @@
 
 DISCO=$(sudo fdisk    -l |grep "10 GiB" | awk '{print $2}' | awk -F ':' '{print $1}')
 
+echo "mostrando disco"
+
+sudo fdisk $DISCO << EOF
+
 echo
 echo "Particionando el disco: $DISCO"
 
@@ -70,9 +74,9 @@ n
 l
 
 +100M
-
-
-
+w
+EOF
+echo
 
 
 echo "Formateando discos"
